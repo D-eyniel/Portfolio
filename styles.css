@@ -292,12 +292,11 @@ h2.portfolio__title {
   margin-top: 40px;
 }
 
-.portfolio__items {
-  display: flex;
-  padding: 100px;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+@media (max-width: 750px) {
+  .portfolio__item {
+    width: 90%;
+    padding: 30px;
+  }
 }
 
 .portfolio__item {
@@ -419,4 +418,19 @@ footer {
 
 .image img {
   animation: fadeIn 1.5s ease-in;
+}
+
+.portfolio__image {
+  height: 100px;
+  width: 100px;
+}
+
+.image2 {
+  height: 100px;
+  width: 150px;
+}
+
+.image3 {
+  height: 100px;
+  width: 150px;
 }
