@@ -295,17 +295,20 @@ h2.portfolio__title {
 @media (max-width: 750px) {
   .portfolio__item {
     width: 90%;
-    padding: 30px;
   }
 }
 
 .portfolio__item {
   background-color: rgb(255, 255, 255);
   border: 1px solid #ccc;
-  padding: 20px;
   border-radius: 8px;
   width: 300px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform .2s;
+}
+
+.portfolio__item:hover{
+  transform: scale(1.1);
 }
 
 .portfolio__link {
@@ -433,4 +436,85 @@ footer {
 .image3 {
   height: 100px;
   width: 150px;
+}
+
+#contact.section {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contact-left-title h2 {
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #31d4c4;
+}
+
+.contact-left-title hr {
+  border: none;
+  width: 60px;
+  height: 3px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #31d4c4;
+  background-color: #333;
+  color: white;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00ffd9;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #31d4c4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #00ffd9;
+}
+
+@media (max-width: 768px) {
+  .contact-left-title h2 {
+    font-size: 28px;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
 }
